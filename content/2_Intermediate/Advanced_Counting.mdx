@@ -114,9 +114,9 @@ many right steps as up steps) when $m \geq n$ is
 
 $$\frac{m-n+1}{m+1}\binom{m+n}{n}.$$
 
-To prove this, we look at bad paths (those that touch $y = x+1$)
-biject with all paths from $(-1, 1)$ to $(m,n)$, which are counted by
-$\binom{m+n}{n-1}$. Good paths $=$ total $-$ bad $= \binom{m+n}{n} - \binom{m+n}{n-1}$.
+We present two proofs:
+1. We look at bad paths (those that touch $y = x+1$). We can then biject with all paths from $(-1, 1)$ to $(m,n)$, which are counted by $\binom{m+n}{n-1}$. Good paths $=$ total $-$ bad $= \binom{m+n}{n} - \binom{m+n}{n-1}$.
+2. Cyclic shifts. Note that 
 
 ### Solving Linear Recurrences
 
@@ -171,8 +171,14 @@ receives their own card?
 
 **Solution.** We first find the total amount of permutations: $5! = 120$. Hence, the derangements are
 
-$$D_5 = 120\left(1 - 1 + \frac{1}{2} - \frac{1}{6} + \frac{1}{24} - \frac{1}{120}\right)
-= 120 \cdot \frac{44}{120} = 44.$$
+$$
+\begin{aligned}
+D_5
+&= 120\left(1 - 1 + \frac{1}{2} - \frac{1}{6} + \frac{1}{24} - \frac{1}{120}\right) \\
+&= 120 \cdot \frac{44}{120} \\
+&= 44.
+\end{aligned}
+$$
 
 Probability is therefore $44/120 = \mathbf{11/30}$.
 
@@ -191,6 +197,9 @@ $-1$ with all partial sums positive (starting from $0$) is the Catalan
 number $C_n = \dfrac{1}{n+1}\binom{2n}{n}$.
 
 For $n = 5$: $C_5 = \dfrac{1}{6}\binom{10}{5} = \dfrac{252}{6} = \mathbf{42}$.
+
+---
+
 
 ### Example 4: Recursion 
 
